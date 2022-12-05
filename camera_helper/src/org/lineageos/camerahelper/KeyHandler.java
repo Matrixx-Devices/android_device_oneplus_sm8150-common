@@ -36,6 +36,7 @@ public class KeyHandler implements DeviceKeyHandler {
         mContext = context;
     }
 
+    @Override
     public KeyEvent handleKeyEvent(KeyEvent event) {
         int scanCode = event.getScanCode();
 
