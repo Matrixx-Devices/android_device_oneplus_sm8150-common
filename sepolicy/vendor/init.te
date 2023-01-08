@@ -1,1 +1,2 @@
 dontaudit init sysfs:file write;
+allow init proc:file write;
