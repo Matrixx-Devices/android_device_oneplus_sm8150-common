@@ -54,4 +54,7 @@
     <bool name="config_dozePulseTilt">true</bool>
     <bool name="config_dozePulseProximity">true</bool>
     <bool name="config_deviceHaveWakeUpProximity">true</bool>
+
+    <!-- Defines custom Vendor sensor for pocket detection. -->
+    <string name="config_pocketJudgeVendorSensorName">oneplus.sensor.proximity</string>
 </resources>
