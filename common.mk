@@ -334,7 +334,7 @@ PRODUCT_COPY_FILES += \
 TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
-    XiaomiDolby
+    OplusDolby
 
 PRODUCT_COPY_FILES += \
     hardware/lineage/compat/vndk/v33/arm/libstagefright_foundation-v33.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
