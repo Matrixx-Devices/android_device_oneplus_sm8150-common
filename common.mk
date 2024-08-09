@@ -314,6 +314,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libOmxVidcCommon \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor \
     libstagefrighthw
 
 # Dolby
