@@ -57,4 +57,10 @@
 
     <!-- Defines custom Vendor sensor for pocket detection. -->
     <string name="config_pocketJudgeVendorSensorName">oneplus.sensor.proximity</string>
+
+    <!-- Whether device has warp charging support -->
+    <bool name="config_hasWarpCharger">true</bool>
+
+    <!-- Path to warp charging status file -->
+    <string name="config_oemFastChargerStatusPath">/sys/class/power_supply/battery/fastcharger</string>
 </resources>
