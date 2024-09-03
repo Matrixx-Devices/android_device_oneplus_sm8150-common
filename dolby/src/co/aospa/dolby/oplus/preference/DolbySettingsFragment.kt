@@ -161,7 +161,7 @@ class DolbySettingsFragment : PreferenceFragment(),
         dlog(TAG, "onPreferenceChange: key=${preference.key} value=$newValue")
         when (preference.key) {
             PREF_PROFILE -> {
-                val profile = newValue.toString().toInt()
+                val profile = newValue.toString()!!.toInt()
                 dolbyController.profile = profile
                 (preferenceManager.preferenceDataStore as DolbyPreferenceStore).profile = profile
                 updateProfileSpecificPrefs()
@@ -176,11 +176,11 @@ class DolbySettingsFragment : PreferenceFragment(),
             }
 
             PREF_STEREO -> {
-                dolbyController.setStereoWideningAmount(newValue.toString().toInt())
+                dolbyController.setStereoWideningAmount(newValue.toString()!!.toInt())
             }
 
             PREF_DIALOGUE -> {
-                dolbyController.setDialogueEnhancerAmount(newValue.toString().toInt())
+                dolbyController.setDialogueEnhancerAmount(newValue.toString()!!.toInt())
             }
 
             PREF_BASS -> {
@@ -192,7 +192,7 @@ class DolbySettingsFragment : PreferenceFragment(),
             }
 
             PREF_IEQ -> {
-                dolbyController.setIeqPreset(newValue.toString().toInt())
+                dolbyController.setIeqPreset(newValue.toString()!!.toInt())
             }
 
             else -> return false
