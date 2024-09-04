@@ -55,6 +55,10 @@
     <bool name="config_dozePulseProximity">true</bool>
     <bool name="config_deviceHaveWakeUpProximity">true</bool>
 
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">30</integer>
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.1</item>
+
     <!-- Defines custom Vendor sensor for pocket detection. -->
     <string name="config_pocketJudgeVendorSensorName">oneplus.sensor.proximity</string>
 
