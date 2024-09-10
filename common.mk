@@ -317,9 +317,15 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libOmxVidcCommon \
-    libstagefright_softomx.vendor \
+    libopus.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_amrnb_common.vendor \
+    libstagefright_enc_common.vendor \
+    libstagefrighthw \
     libstagefright_softomx_plugin.vendor \
-    libstagefrighthw
+    libstagefright_softomx.vendor \
+    libvorbisidec.vendor \
+    libvpx.vendor
 
 # Dolby
 PRODUCT_COPY_FILES += \
