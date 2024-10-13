@@ -334,11 +334,8 @@ PRODUCT_COPY_FILES += \
 TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
-    OplusDolby
-
-PRODUCT_COPY_FILES += \
-    hardware/lineage/compat/vndk/v33/arm/libstagefright_foundation-v33.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    hardware/lineage/compat/vndk/v33/arm64/libstagefright_foundation-v33.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+    OplusDolby \
+    libstagefright_foundation-v33
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
